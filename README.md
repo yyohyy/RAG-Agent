@@ -17,8 +17,8 @@
 1. Clone the repository[on Windows]:
 
    ```bash
-   git clone https://github.com/yyohyy/12-Factor-Digit-Classifier.git
-   cd 12-Factor-Digit-Classifier
+   git clone https://github.com/yyohyy/RAG-agent.git
+   cd RAG-agent
    ```
    
 2. Set .env file 
