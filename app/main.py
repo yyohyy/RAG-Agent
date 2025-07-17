@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from contextlib import asynccontextmanager
-from app.routes.agent import router as agent_router
+from app.routes.agent import agent_router
+from app.routes.booking import booking_router
 from app.config.database import Base, engine
 
 @asynccontextmanager
@@ -14,3 +15,4 @@ app = FastAPI(
 )
 
 app.include_router(agent_router, prefix='/v1')
+app.include_router(booking_router, prefix='/v1')

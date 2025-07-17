@@ -17,6 +17,10 @@ class Variable(BaseSettings):
     QDRANT_COLLECTION: str
     TAVILY_API_KEY: str
     CHUNK_SIZE:int
+    SMTP_USER: str 
+    SMTP_PASS: str
+    SMTP_HOST: str
+    SMTP_PORT: str
 
     model_config = ConfigDict(
         env_file=str(Path(__file__).resolve().parents[1] / ".env")

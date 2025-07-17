@@ -4,7 +4,7 @@ from app.common.logger import get_logger
 from app.utils.chunk import CHUNKERS
 from app.config.vector import upsert_docs
 from app.config.database import SessionLocal
-from app.models.models import DocumentMetaData
+from app.models.document import DocumentMetaData
         
 class RAGService:
     def __init__(self):
